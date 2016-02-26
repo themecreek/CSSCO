@@ -1,0 +1,90 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "style",
+        "src": "cssco.css"
+      },
+      {
+        "type": "script",
+        "src": "app.js"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["*"],
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "locations": {
+        "title": "Choose your Images",
+        "order": 1,
+        "type": "array",
+        "items": {
+          "notitle": true,
+          "type": "object",
+          "properties": {
+            "location": {
+              "order": 1,
+              "title": "Location",
+              "description": "Select the the image or images you’d like to filter.",
+              "type": "string",
+              "format": "selector"
+            },
+            "csscofilter": {
+              "order": 2,
+              "title": "Filter",
+              "type": "string",
+              "enum": [
+                "cssco--no-filter",
+                "cssco--c1",
+                "cssco--f2",
+                "cssco--g3",
+                "cssco--p5",
+                "cssco--hb1",
+                "cssco--hb2",
+                "cssco--acg",
+                "cssco--lv3",
+                "cssco--m5",
+                "cssco--a6",
+                "cssco--m3",
+                "cssco--t1",
+                "cssco--b5",
+                "cssco--x1"
+              ],
+              "enumNames": {
+                "cssco--no-filter": "No Filter",
+                "cssco--c1": "C1",
+                "cssco--f2": "F2",
+                "cssco--g3": "G3",
+                "cssco--p5": "P5",
+                "cssco--hb1": "HB1",
+                "cssco--hb2": "HB2",
+                "cssco--acg": "ACG",
+                "cssco--lv3": "LV3",
+                "cssco--m5": "M5",
+                "cssco--a6": "A6",
+                "cssco--m3": "M3",
+                "cssco--t1": "T1",
+                "cssco--b5": "B5",
+                "cssco--x1": "X1"
+              },
+              "default": "cssco--no-filter"
+            }
+          }
+        },
+        "default": [
+          {
+            "location": "body",
+            "filter": "cssco--no-filter"
+          }
+        ]
+      }
+    }
+  }
+}
