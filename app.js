@@ -4,7 +4,7 @@
 
   var options = INSTALL_OPTIONS;
   var prevFilters = [];
-  // CSS Grams code can be used for this instance...
+  // CSS Gram code can be used for this instance...
   var update = function(){
     for (var i=0; i < prevFilters.length; i++){
       prevFilters[i][0].classList.remove(prevFilters[i][1]);
